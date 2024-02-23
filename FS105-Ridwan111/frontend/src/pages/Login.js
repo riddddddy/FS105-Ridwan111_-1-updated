@@ -18,7 +18,7 @@ export default function Login() {
     e.preventDefault();
     console.log(email, password);
 
-    const response = await fetch("/api/users/login", {
+    const response = await fetch("https://fs105-ridwan111-1-updated.onrender.com/api/users/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),

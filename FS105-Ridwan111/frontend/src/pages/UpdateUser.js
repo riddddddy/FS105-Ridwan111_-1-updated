@@ -28,7 +28,7 @@ const UpdateUser = () => {
   // Fetch user details function
   const fetchUserDetails = async () => {
     try {
-      const response = await fetch(`/api/users/${user_id}`);
+      const response = await fetch(`https://fs105-ridwan111-1-updated.onrender.com/api/users/${user_id}`);
       const userData = await response.json();
       console.log(userData);
       setUserAccount(userData); // Set the state with the fetched user data
